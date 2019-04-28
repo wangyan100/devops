@@ -18,4 +18,8 @@
 
   https://www.cnblogs.com/linkstar/p/9901269.html
 
+- Linux中设置服务自启动的三种方式
+
+  https://www.cnblogs.com/nerxious/archive/2013/01/18/2866548.html
+
  
