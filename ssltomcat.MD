@@ -1,12 +1,10 @@
 
 
-####  Install certification for your website 
+####  Install certificate for your website 
 
-- Buy certfication for your domain 
+- Buy certificate for your domain 
 
-  There are many website offer certification , follow instruction you will be able to 
-
-  get the related certificate files for your domain
+  There are many website offer certification , follow instruction you will be able to get the related certificate files for your domain
 
 
 
@@ -21,7 +19,7 @@
   E.g,  if you have them seperately as serveal files you could make them as one bundle file, for details click the link https://support.comodo.com/index.php?/Knowledgebase/Article/View/1145/1/how-do-i-make-my-own-bundle-file-from-crt-files
 
 
-- You generate/export the keystore file by below command
+- You generate/export the keystore file by below command, you need to create keystorepass which will be used by server.xml configuration later on
 
   `openssl pkcs12 -export -in mainriversoft_com.crt -inkey mainriversoft_com_key.txt -certfile mainriversoft_com.ca-bundle -name mrscert -out mainriversoft_com.p12`
 
@@ -45,10 +43,9 @@
    
   - start tomcat on ubuntu linux
   
-     'systemctl start tomcat'
+     `systemctl start tomcat`
 
-
-- As you can see, it works 
+- As you can see, it works!
 
     ![ssl2](./images/ssl3.png)
 
