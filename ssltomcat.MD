@@ -1,14 +1,14 @@
 
 
-####  How to Install certificate for your website 
+####  How to Install SSL certificate for your website 
 
 
 
-This article uses tomcat as web server example.
+This article uses tomcat as web server,  use mainriversoft.com as  doamin 
 
-- Buy certificate for your domain 
+- Get SSL certificate for your domain 
 
-  There are many website offer certificate , just google ssl certificate + domain, then follow instruction you will be able to buy valid certificate  for your domain
+  There are SSL certificate providers , just google ssl certificate + domain, then follow instruction you will be able to buy valid certificate  for your domain
   
   
 
