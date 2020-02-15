@@ -1,14 +1,18 @@
 
 
-####  Install certificate for your website 
+####  How to Install certificate for your website 
+
+
+
+This article uses tomcat as web server example.
 
 - Buy certificate for your domain 
 
-  There are many website offer certification , follow instruction you will be able to get the related certificate files for your domain
+  There are many website offer certificate , just google ssl certificate + domain, then follow instruction you will be able to buy valid certificate  for your domain
+  
+  
 
-
-
-- Assume you got related certification files for your doamin  (I got them from https://www.ssls.com/)
+- Assume you got valid certificate files for your doamin  (I got them from https://www.ssls.com/)
 
   mainriversoft_com.crt   -> server certificate
 
@@ -16,10 +20,12 @@
 
   mainriversoft_com.ca-bundle  -> Root & Intermediate Certificate Bundle
 
-  E.g,  if you have them seperately as serveal files you could make them as one bundle file, for details click the link https://support.comodo.com/index.php?/Knowledgebase/Article/View/1145/1/how-do-i-make-my-own-bundle-file-from-crt-files
+  If you have root and intermediate certificate as seperate files instead of one bundle, you could join them as one bundle file, click the [link]( https://support.comodo.com/index.php?/Knowledgebase/Article/View/1145/1/how-do-i-make-my-own-bundle-file-from-crt-files) for details
+  
+  
 
 
-- You generate/export the keystore file by below command, you need to create keystorepass which will be used by server.xml configuration later on
+- You generate/export the keystore file by below command,  need to provide keystorepass which will be used by server.xml configuration later on
 
   `openssl pkcs12 -export -in mainriversoft_com.crt -inkey mainriversoft_com_key.txt -certfile mainriversoft_com.ca-bundle -name mrscert -out mainriversoft_com.p12`
 
@@ -36,11 +42,11 @@
   - modify tomcat/config/server.xml to setup keystore for tomcat 
   
      ![ssl1](./images/ssl1.png)
- 
+
   - modify tomcat/config/web.xml for redirect http to https         
   
      ![ssl2](./images/ssl2.png)
-   
+  
   - start tomcat on ubuntu linux
   
      `systemctl start tomcat`
