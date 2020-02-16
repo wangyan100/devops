@@ -4,7 +4,7 @@
 
 
 
-This article uses tomcat as web server,  use mainriversoft.com as  doamin 
+This article uses tomcat as web server,  and mainriversoft.com as  doamin to explain how to install certificate for your website
 
 - Get SSL certificate for your domain 
 
